@@ -31,6 +31,7 @@ public class Handledropdown {
 			if(option.getText().equals("Cuba"))
 			{
 				option.click();
+				break;
 			}
 		}
 
