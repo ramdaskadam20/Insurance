@@ -23,10 +23,28 @@ public class Handling_checkbox {
 		
 	System.out.println("Total no of checkboxes: "+allcheckboxes.size());
 	
-	for(WebElement checkbox:allcheckboxes)
+	/*for(WebElement checkbox:allcheckboxes)
 	{
 		checkbox.click();
+	} */
+	
+	
+	int totalcheckboxes=allcheckboxes.size();
+	
+	/*for(int i=totalcheckboxes-2;i<totalcheckboxes;i++)
+	{
+		allcheckboxes.get(i).click();
+	} */
+	
+	
+	for(int i=0;i<totalcheckboxes;i++)
+	{
+		if(i<2)
+		{
+		allcheckboxes.get(i).click();
+		}
 	}
+	
 		
 		
 
