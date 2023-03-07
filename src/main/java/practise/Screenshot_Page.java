@@ -27,10 +27,16 @@ public class Screenshot_Page {
 		FileHandler.copy(src, desti); */
 		
 		
-		//Specific part
+		/*//Specific part
 		WebElement part=driver.findElement(By.xpath("//div[@class='product-grid home-page-product-grid']"));
 		File src=part.getScreenshotAs(OutputType.FILE);
 		File desti=new File("E:\\documents\\screenshot\\products.jpg");
+		FileHandler.copy(src, desti); */
+		
+		//Specific ele
+		WebElement ele=driver.findElement(By.xpath("//img[@alt='Picture of Apple MacBook Pro 13-inch']"));
+		File src=ele.getScreenshotAs(OutputType.FILE);
+		File desti=new File("E:\\documents\\screenshot\\ele.jpg");
 		FileHandler.copy(src, desti);
 	}
 
